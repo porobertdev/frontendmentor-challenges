@@ -27,7 +27,7 @@ function Card(name) {
                             alt="clickable icon to see the challenge"
                         />
                     </a>
-                    <a href="${URL_GIT}/src/challenges/${name}" target="_blank">
+                    <a href="${URL_GIT}/${name}" target="_blank">
                         <img src="./src/assets/github.svg" alt="GitHub logo"
                     /></a>
                 </div>
