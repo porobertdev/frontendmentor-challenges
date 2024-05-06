@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* BUILT-IN FORM CONTROLS */
+input,
+button {
+  outline: none;
+  border: none;
+  appearance: none;
+}
