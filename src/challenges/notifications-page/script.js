@@ -1,0 +1,1 @@
+const btn=document.querySelector(".notification__action");function readNotifications(t){const e=document.querySelectorAll(".card--unread");0!=e.length&&(e.forEach((t=>{t.classList.replace("card--unread","card--read")})),document.querySelector(".notification__count").textContent=0)}btn.addEventListener("click",readNotifications);
