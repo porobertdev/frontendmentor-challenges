@@ -38,6 +38,8 @@ body {
     /* ICONS */
     --filter-blue: invert(63%) sepia(45%) saturate(6760%) hue-rotate(210deg)
         brightness(87%) contrast(84%);
+    --filter-hover-blue: invert(30%) sepia(97%) saturate(4354%)
+        hue-rotate(228deg) brightness(88%) contrast(92%);
 }
 
 body {
@@ -73,6 +75,10 @@ body {
             img {
                 width: 2rem;
                 filter: var(--filter-blue);
+            }
+
+            a:hover {
+                filter: var(--filter-hover-blue);
             }
         }
     }
