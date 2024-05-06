@@ -1,5 +1,6 @@
 const path = require('path');
 const htmlWebpackPlugin = require('html-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     entry: './src/index.js',
@@ -42,6 +43,12 @@ module.exports = {
             title: 'To-Do-List',
             inject: 'head',
             scriptLoading: 'defer',
+        }),
+        new CopyPlugin({
+            patterns: [
+                { from: './src/assets', to: './src/assets' },
+                { from: './src/challenges', to: './src/challenges' },
+            ],
         }),
     ],
 };

@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/images/favicon-32x32.png"
+        />
+        <link rel="stylesheet" href="./style.css" />
+        <script defer src="./script.js"></script>
+
+        <title>Frontend Mentor | Notifications page</title>
+
+        <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+        <style>
+            .attribution {
+                font-size: 11px;
+                text-align: center;
+            }
+            .attribution a {
+                color: hsl(228, 45%, 44%);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="notification">
+            <ul class="notification__navbar">
+                <li class="notification__title">
+                    Notifications <span class="notification__count">3</span>
+                </li>
+                <li class="notification__action">Mark all as read</li>
+            </ul>
+
+            <div class="notification__cards">
+                <div class="card card--unread">
+                    <img
+                        src="./assets/images/avatar-mark-webber.webp"
+                        alt=""
+                        class="card__image"
+                    />
+                    <div class="card__info">
+                        <div class="card__content">
+                            <span class="name name--person">Mark Webber</span>
+                            reacted to your recent post
+                            <span class="name name--post"
+                                >My first tournament today!</span
+                            >
+                        </div>
+                        <span class="card__time">1m ago</span>
+                    </div>
+                </div>
+                <div class="card card--unread">
+                    <img
+                        src="./assets/images/avatar-angela-gray.webp"
+                        alt=""
+                        class="card__image"
+                    />
+                    <div class="card__info">
+                        <div class="card__content">
+                            <span class="name name--person">Angela Gray</span>
+                            followed you
+                        </div>
+                        <span class="card__time">5m ago</span>
+                    </div>
+                </div>
+                <div class="card card--unread">
+                    <img
+                        src="./assets/images/avatar-jacob-thompson.webp"
+                        alt=""
+                        class="card__image"
+                    />
+                    <div class="card__info">
+                        <div class="card__content">
+                            <span class="name name--person"
+                                >Jacob Thompson</span
+                            >
+                            has joined your group
+                            <span class="name name--group">Chess Club</span>
+                        </div>
+                        <span class="card__time">1 day ago</span>
+                    </div>
+                </div>
+                <div class="card card--read">
+                    <img
+                        src="./assets/images/avatar-rizky-hasanuddin.webp"
+                        alt=""
+                        class="card__image"
+                    />
+                    <div class="card__info">
+                        <div class="card__content">
+                            <span class="name name--person"
+                                >Rizky Hasanuddin</span
+                            >
+                            sent you a private message
+                        </div>
+                        <span class="card__time">5 days ago</span>
+                        <p class="private-message">
+                            Hello, thanks for setting up the
+                            <span class="name name--group">Chess Club</span>.
+                            I've been a member for a few weeks now and I'm
+                            already having lots of fun and improving my game.
+                        </p>
+                    </div>
+                </div>
+                <div class="card card--read">
+                    <img
+                        src="./assets/images/avatar-kimberly-smith.webp"
+                        alt=""
+                        class="card__image"
+                    />
+                    <div class="card__info">
+                        <div class="card__content">
+                            <span class="name name--person"
+                                >Kimberly Smith</span
+                            >
+                            commented on your picture
+                        </div>
+                        <span class="card__time">1 week ago</span>
+                    </div>
+                </div>
+                <div class="card card--read">
+                    <img
+                        src="./assets/images/avatar-nathan-peterson.webp"
+                        alt=""
+                        class="card__image"
+                    />
+                    <div class="card__info">
+                        <div class="card__content">
+                            <span class="name name--person"
+                                >Nathan Peterson</span
+                            >
+                            reacted to your recent post
+                            <span class="name name--post"
+                                >5 end-game strategies to increase your win
+                                rate</span
+                            >
+                        </div>
+                        <span class="card__time">2 weeks ago</span>
+                    </div>
+                </div>
+                <div class="card card--read">
+                    <img
+                        src="./assets/images/avatar-anna-kim.webp"
+                        alt=""
+                        class="card__image"
+                    />
+                    <div class="card__info">
+                        <div class="card__content">
+                            <span class="name name--person">Anna Kim</span> left
+                            the group
+                            <span class="name name--group">Chess Club</span>
+                        </div>
+                        <span class="card__time">2 weeks ago</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="attribution">
+            Challenge by
+            <a
+                href="https://www.frontendmentor.io?ref=challenge"
+                target="_blank"
+                >Frontend Mentor</a
+            >. Coded by <a href="#">Your Name Here</a>.
+        </div>
+    </body>
+</html>

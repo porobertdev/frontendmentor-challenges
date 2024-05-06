@@ -1,16 +1,15 @@
 import { html, render } from '@github/jtml';
 import './css/style.css';
 
-const URL = {
-    live: 'https://porobertdev.github.io/frontendmentor-challenges',
-    git: 'https://github.com/porobertdev/frontendmentor-challenges',
-};
-const PATH = './challenges';
+const URL_GIT =
+    'https://github.com/porobertdev/frontendmentor-challenges/tree/gh-pages/src/challenges';
+
+const PATH = './src/challenges';
 const challenges = ['notifications-page'];
 const container = document.querySelector('.challenges-container');
 
 function Card(name) {
-    const challenge = `${PATH}/${name}/`;
+    const challenge = `${PATH}/${name}`;
 
     return html`
         <div class="card">
@@ -22,14 +21,14 @@ function Card(name) {
                         .join(' ')}
                 </h1>
                 <div class="card__links">
-                    <a href="${URL.live}/${name}/index.html">
+                    <a href="${challenge}/index.html" target="_blank">
                         <img
-                            src="./assets/eye.svg"
+                            src="./src/assets/eye.svg"
                             alt="clickable icon to see the challenge"
                         />
                     </a>
-                    <a href="${URL.git}/src/challenges/${name}">
-                        <img src="./assets/github.svg" alt="GitHub logo"
+                    <a href="${URL_GIT}/src/challenges/${name}" target="_blank">
+                        <img src="./src/assets/github.svg" alt="GitHub logo"
                     /></a>
                 </div>
             </div>
